@@ -10,7 +10,7 @@ resource "aws_iam_user" "lb" {
   }
 }
 resource "aws_iam_user" "lb_user" {
-  user_name = "lb"
+name = "lb"
 }
 
 resource "aws_iam_user_policy" "lb_admin_policy" {
@@ -21,7 +21,7 @@ resource "aws_iam_user_policy" "lb_admin_policy" {
       {
         "Effect": "Allow",
         "Action": [
-          "iam:*"
+          "*"
         ],
         "Resource": "*"
       }
