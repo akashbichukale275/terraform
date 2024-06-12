@@ -21,7 +21,7 @@ resource "aws_iam_user_policy" "lb_admin_policy" {
       {
         "Effect": "Allow",
         "Action": [
-          "iam:PassRole"  <-- Replace with specific actions
+          "iam:*"
         ],
         "Resource": "*"
       }
